@@ -6,14 +6,14 @@ module.exports = function (config) {
     frameworks: ['mocha', 'chai'],
     singleRun: true,
     autoWatch: false,
-    reporters: ['mocha'],
+    reporters: ['nyan'],
     files: ['./tests/index.js'],
     preprocessors: {
-      './test/*.js': ['webpack']
+      './tests/index.js': ['webpack']
     },
     webpack: webpackConfig,
     webpackMiddleware: {
-      noInfo: false
+      noInfo: true
     }
   })
 }

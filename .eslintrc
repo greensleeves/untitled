@@ -2,5 +2,13 @@
   "extends": "standard",
   "plugins": [
     "html"
-  ]
+  ],
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+  "globals": {
+    "chai": true,
+    "expect": true
+  }
 }
